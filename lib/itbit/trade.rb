@@ -24,10 +24,6 @@ module Itbit
       end
     end
 
-    def timestamp=(value)
-      @timestamp = value.is_a?(String) ? Time.parse(value).to_i : value
-    end
-
     # Lists all trades for a wallet
     # Results can be filtered and paginated by passing in these options.
     #  wallet_id: String, defaults to Itbit.default_wallet_id

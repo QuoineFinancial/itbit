@@ -10,7 +10,7 @@ describe Itbit::Trade do
       trade.order_id.should == "c78363f9-1169-4dbb-b256-0756880dc625"
       trade.direction.should == :buy
       trade.commission_paid.should == "0.40250000".to_d
-      trade.timestamp.should == Time.parse("2014-03-04T16:02:28.0070000Z").to_i
+      trade.timestamp.should == "2014-03-04T16:02:28.0070000Z"
       trade.rebates_applied.should == 0
       trade.currency2.should == :usd
       trade.instrument.should == :xbtusd
